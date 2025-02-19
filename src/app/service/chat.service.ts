@@ -6,8 +6,8 @@ import { Observable, Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ChatService {
-  private apiUrl = 'http://localhost:5001'; // Adjust this to match your backend URL
-
+  //private apiUrl = 'http://localhost:5001'; // Adjust this to match your backend URL
+private apiUrl='https://llm-server-mean-stack.onrender.com'
   constructor(private http: HttpClient) {}
 
   sendMessage(query: string): Observable<any> {
